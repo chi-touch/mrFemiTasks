@@ -23,6 +23,8 @@ public class Example {
 
             Files.createFile(path);
             //Files.deleteIfExists(path);
+           // System.out.println("file deleted successfully");
+            System.out.println("file created successfully");
 
         }catch(IOException exception){
             exception.printStackTrace();
