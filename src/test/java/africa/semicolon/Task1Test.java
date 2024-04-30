@@ -1,8 +1,7 @@
 package africa.semicolon;
 
+import africa.semicolon.Chapter14.Task1;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,7 +10,7 @@ class Task1Test {
     @Test
     public void  testToGetHighest(){
         int[] numbers = {-1,2};
-        assertEquals(-2,Task1.highest(numbers));
+        assertEquals(-2, Task1.highest(numbers));
 
     }
 

@@ -1,4 +1,4 @@
-package africa.semicolon;
+package africa.semicolon.Chapter14;
 
 public class DataValidator {
     public static boolean isPhoneNumberValid(String phoneNumber) {
