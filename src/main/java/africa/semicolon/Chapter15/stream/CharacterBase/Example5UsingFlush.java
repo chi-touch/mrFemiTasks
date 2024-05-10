@@ -12,7 +12,7 @@ public class Example5UsingFlush {
         try(OutputStreamWriter writer = new OutputStreamWriter(out);
                 BufferedWriter bufferWriter= new BufferedWriter(writer)){
             String data = "Hello guy's It's break time and only 16 people are gonna eat";
-            bufferWriter.write(writer,data.length());
+          //  bufferWriter.write(writer,data.length());
         }catch (IOException e){
             System.err.println(e.getMessage());
         }
