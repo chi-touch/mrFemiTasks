@@ -10,7 +10,4 @@ public class FunctionWithOutAdditionSign {
         return  sum ^ result1;
     }
 
-//    public static int additionOfANegativeNumbers(int qust, int qust2) {
-//        if ()
-//    }
 }

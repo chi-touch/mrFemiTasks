@@ -1,0 +1,30 @@
+[
+	{
+		"id":1,
+		"name": "Men Doe",
+		"amount": 2000.00,
+		"type": "DEBIT",
+		"date": "2024-05-01"
+
+	},
+
+	{
+		"id":2,
+		"name": "Favor Doe",
+		"amount": 1000.00,
+		"type": "DEBIT",
+		"date": "2024-05-01"
+
+	},
+
+	{
+
+		"id": 3,
+		"name": "Precious Doe",
+		"amount": 1000.00,
+		"type": "CREDIT",
+		"date": "2024-05-01"
+
+	}
+
+]
