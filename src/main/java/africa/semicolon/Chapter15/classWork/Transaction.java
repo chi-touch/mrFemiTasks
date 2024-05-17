@@ -11,6 +11,21 @@ public class Transaction {
     private String name;
     private BigDecimal amount;
     private Type type;
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    private String accountNumber;
+
+    public Transaction(String amount,String accountNumber){
+        this.accountNumber = accountNumber;
+        this.amount = new BigDecimal(amount);
+    }
     private String date = String.valueOf(LocalDate.now());
 
 
