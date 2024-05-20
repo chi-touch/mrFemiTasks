@@ -12,11 +12,11 @@ public class StreamExample4 {
                                  new Transaction("$100","24689"));
 
 
-        numbers.stream()//[{"$2000","12345"},{"$1000","98769"},{"$100","24689"}]
-                .filter((transaction)->new BigDecimal(transaction.getAmount()
-                        .substring(1))
-                        .compareTo(new BigDecimal(100))<=0)
-                .forEach(System.out::println);
+//        numbers.stream()//[{"$2000","12345"},{"$1000","98769"},{"$100","24689"}]
+//                .filter((transaction)->new BigDecimal(transaction.getAmount().
+//                        .substring(1))
+//                        .compareTo(new BigDecimal(100))<=0)
+//                .forEach(System.out::println);
 
 
 
