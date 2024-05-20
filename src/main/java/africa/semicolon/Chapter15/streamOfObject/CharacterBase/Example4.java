@@ -1,10 +1,8 @@
-package africa.semicolon.Chapter15.stream.CharacterBase;
+package africa.semicolon.Chapter15.streamOfObject.CharacterBase;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.stream.Collectors;
 
 import static java.lang.System.in;
 

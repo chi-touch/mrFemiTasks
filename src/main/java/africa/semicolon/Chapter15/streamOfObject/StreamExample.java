@@ -1,4 +1,4 @@
-package africa.semicolon.Chapter15.stream;
+package africa.semicolon.Chapter15.streamOfObject;
 
 import africa.semicolon.Chapter15.classWork.Transaction;
 

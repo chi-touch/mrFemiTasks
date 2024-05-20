@@ -1,7 +1,5 @@
-package africa.semicolon.Chapter15.stream;
+package africa.semicolon.Chapter15.streamOfObject;
 
-import java.io.DataInputStream;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -13,7 +11,7 @@ public class Example4 {
     public static void main(String[] args) {
 
 
-        String fileLocation = "C:\\Users\\User\\IdeaProjects\\mrFemiTasks\\src\\main\\java\\africa\\semicolon\\Chapter15\\stream\\sample3.txt";
+        String fileLocation = "C:\\Users\\User\\IdeaProjects\\mrFemiTasks\\src\\main\\java\\africa\\semicolon\\Chapter15\\streamOfObject\\sample3.txt";
         try (FileOutputStream fileOutputStream = new FileOutputStream(fileLocation, true)
                 ){
             String data = "\nInvest your money wisely, stop playing sporty bet";

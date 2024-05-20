@@ -70,8 +70,17 @@ public class Transaction {
         this.type = type;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", amount=" + amount +
+                ", type=" + type +
+                ", accountNumber='" + accountNumber + '\'' +
+                ", date='" + date + '\'' +
+                '}';
+    }
 
     public void readTransactionFile() {
         String location = "C:\\Users\\User\\Desktop\\Trasaction";

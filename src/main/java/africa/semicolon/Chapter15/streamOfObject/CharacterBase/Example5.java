@@ -1,8 +1,7 @@
-package africa.semicolon.Chapter15.stream.CharacterBase;
+package africa.semicolon.Chapter15.streamOfObject.CharacterBase;
 
 import java.io.*;
 
-import static java.lang.System.in;
 import static java.lang.System.out;
 
 public class Example5 {

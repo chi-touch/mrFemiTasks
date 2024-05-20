@@ -1,11 +1,11 @@
-package africa.semicolon.Chapter15.stream.CharacterBase;
+package africa.semicolon.Chapter15.streamOfObject.CharacterBase;
 
 import java.io.FileReader;
 import java.io.IOException;
 
 public class Example1 {
     public static void main(String[] args) {
-        String fileLocation = "C:\\Users\\User\\IdeaProjects\\mrFemiTasks\\src\\main\\java\\africa\\semicolon\\Chapter15\\stream\\sample.txt";
+        String fileLocation = "C:\\Users\\User\\IdeaProjects\\mrFemiTasks\\src\\main\\java\\africa\\semicolon\\Chapter15\\streamOfObject\\sample.txt";
 
         char[] fileChars = new char[1024];
         try (FileReader fileReader = new FileReader(fileLocation)){

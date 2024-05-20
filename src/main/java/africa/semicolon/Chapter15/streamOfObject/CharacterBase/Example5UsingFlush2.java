@@ -1,4 +1,4 @@
-package africa.semicolon.Chapter15.stream.CharacterBase;
+package africa.semicolon.Chapter15.streamOfObject.CharacterBase;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

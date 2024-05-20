@@ -1,9 +1,8 @@
-package africa.semicolon.Chapter15.stream;
+package africa.semicolon.Chapter15.streamOfObject;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 public class Example3 {
 
@@ -13,7 +12,7 @@ public class Example3 {
     public static void main(String[] args) {
 
 
-        String fileLocation = "C:\\Users\\User\\IdeaProjects\\mrFemiTasks\\src\\main\\java\\africa\\semicolon\\Chapter15\\stream\\sample3.txt";
+        String fileLocation = "C:\\Users\\User\\IdeaProjects\\mrFemiTasks\\src\\main\\java\\africa\\semicolon\\Chapter15\\streamOfObject\\sample3.txt";
         try (var inputStream = new FileInputStream(fileLocation);
              var dataInputStream = new DataInputStream(inputStream)) {
             byte[] fileDate = dataInputStream.readAllBytes();
