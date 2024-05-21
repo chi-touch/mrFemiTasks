@@ -1,11 +1,10 @@
 package africa.semicolon.Chapter15.streamOfObject;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import static java.util.stream.Collectors.toMap;
 
 public class StreamOperationsExample1 {
     public static  List<Integer> getEvenNumbersOf(List<Integer>numbers){
@@ -25,9 +24,29 @@ public class StreamOperationsExample1 {
 
     public static Map<Integer, String> mapCodePointToCharacter(List<Integer> codePoints) {
         return codePoints.stream()
-                .collect(Collectors.toMap((codePoint)->codePoint,
+                .collect(toMap((codePoint)->codePoint,
                         Character::toString));
 
     }
 
+    public static Map<Integer, String> mapCodePointToCharacterMergeFunction(List<Integer> codePoints) {
+        return codePoints.stream()
+                .collect(toMap((codePoint)->codePoint,
+                        Character::toString,(a,b)->b));
+
+    }
+
+    public static Map<Integer, String> mapCodePointToCharacterTakesThreeThings(List<Integer> codePoints) {
+        return codePoints.stream()
+                .collect(toMap((codePoint)->codePoint,
+                        Character::toString,(a,b)->b,()->new Hashtable<>()));
+
+    }
+
+
+    public static String getNumbersFormatted(List<Integer> numbers) {
+        return numbers.stream()
+                .map((number)->number+"")
+                .collect(Collectors.joining(",","[","]"));
+    }
 }
