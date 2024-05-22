@@ -102,6 +102,31 @@ public class ClassWork {
     }
 
 
+//    public static double averageTransaction(LocalDate startDate, LocalDate endDate) throws IOException {
+//            Path path = Paths.get("C:\\Users\\User\\IdeaProjects\\mrFemiTasks\\src\\main\\java\\africa\\semicolon\\Chapter15\\classWork\\Trasaction.Json");
+//            String fileContent = Files.readString(path);
+//            Transaction[] transactions = deserializeTrans(fileContent);
+//            return Arrays.stream(transactions)
+//                    .filter(transaction -> !transaction.getDate().isBefore(startDate)
+//                            && !transaction.getDate().isAfter(endDate))
+//                    .mapToDouble(Transaction::getAmount)
+//                    .average()
+//                    .orElse(0.0);
+//    }
+//
+//    public static AccountSummary getAccountSummary(String accountNumber, LocalDate startDate, LocalDate endDate) throws IOException {
+//        Path path = Paths.get("C:\\Users\\DELL\\IdeaProjects\\OOP\\src\\jason\\Transaction.json");
+//        String fileContent = Files.readString(path);
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        Transaction[] transactions = objectMapper.readValue(fileContent, Transaction[].class);
+//        double balance = Arrays.stream(transactions)
+//                .filter(transaction -> !transaction.getDate().isBefore(startDate) && !transaction.getDate().isAfter(endDate))
+//                .mapToDouble(Transaction::getAmount)
+//                .sum();
+//
+//        return new AccountSummary(accountNumber, balance);
+//    }
+
 }
 
 

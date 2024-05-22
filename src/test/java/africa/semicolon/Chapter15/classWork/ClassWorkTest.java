@@ -59,4 +59,23 @@ class ClassWorkTest {
     }
 
 
+//    @Test
+//    public void testToGetTheAverageTransactionAmountForSpecifiedPeriod() throws IOException {
+//        double expected = ClassWork.averageTransaction(LocalDate.of(2024, 6, 1), LocalDate.of(2024, 6, 7));
+//        assertEquals(5000.0, expected, 0.0);
+//
+//    }
+//
+//    @Test
+//    public void testToGetAccountNumberAndAccountSummery() throws IOException {
+//        AccountSummary accountSummary = ClassWork.getAccountSummary("12345678", LocalDate.of(2024, 6, 1), LocalDate.of(2024, 6, 7));
+//        assertEquals("12345678", accountSummary.getAccountNumber());
+//
+//        double expectedBalance = 10000.0;
+//        assertEquals(expectedBalance, accountSummary.getBalance(), 0.001);
+//        String expectedSummary = "Account Number: 12345678\nBalance: " + expectedBalance;
+//        assertEquals(expectedSummary, accountSummary.getAccountSummary());
+//    }
+
+
 }
