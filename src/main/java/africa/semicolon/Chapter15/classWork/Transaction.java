@@ -1,13 +1,25 @@
 package africa.semicolon.Chapter15.classWork;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
+
 public class Transaction {
 
     private int id;
+
+    @JsonSerialize(using = LocalDateSerializer.class)
+    @JsonDeserialize(using  = LocalDateDeserializer.class)
+    private LocalDate date;
     private String name;
     private BigDecimal amount;
     private Type type;
@@ -26,8 +38,8 @@ public class Transaction {
         this.accountNumber = accountNumber;
         this.amount = new BigDecimal(amount);
     }
-    private String date = String.valueOf(LocalDate.now());
 
+    public Transaction(){}
 
     public int getId() {
         return id;
@@ -53,11 +65,11 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public String getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

@@ -1,5 +1,6 @@
 package africa.semicolon.Chapter15.streamOfObject;
 
+import java.security.SecureRandom;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -48,5 +49,16 @@ public class StreamOperationsExample1 {
         return numbers.stream()
                 .map((number)->number+"")
                 .collect(Collectors.joining(",","[","]"));
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+
+        System.out.println("spining...");
+        for (int count = 0; count < 3; count++) {
+            Thread.sleep(300);
+            if (count ==2) System.out.println(new SecureRandom());
+
+
+        }
     }
 }

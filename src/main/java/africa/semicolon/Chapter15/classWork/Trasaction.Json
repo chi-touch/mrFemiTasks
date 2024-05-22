@@ -2,7 +2,7 @@
 	{
 		"id":1,
 		"name": "Men Doe",
-		"amount": 2000.00,
+		"amount": 2000,
 		"type": "DEBIT",
 		"date": "2024-05-01"
 
@@ -11,20 +11,43 @@
 	{
 		"id":2,
 		"name": "Favor Doe",
-		"amount": 1000.00,
+		"amount": 1000,
 		"type": "DEBIT",
 		"date": "2024-05-01"
 
 	},
 
 	{
-
 		"id": 3,
 		"name": "Precious Doe",
-		"amount": 1000.00,
+		"amount": 1000,
 		"type": "CREDIT",
-		"date": "2024-05-01"
+		"date": "2024-05-06"
+	},
 
+	{
+		"id": 4,
+		"name": "Precious Doe",
+		"amount": 1000,
+		"type": "CREDIT",
+		"date": "2024-06-17"
+	},
+
+	{
+		"id": 5,
+		"name": "Precious Doe",
+		"amount": 1000,
+		"type": "CREDIT",
+		"date": "2024-06-17"
+	},
+
+
+	{
+		"id": 6,
+		"name": "Precious Doe",
+		"amount": 1000,
+		"type": "CREDIT",
+		"date": "2024-06-18"
 	}
 
 ]

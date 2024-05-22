@@ -1,5 +1,6 @@
 package africa.semicolon.Chapter15.JsonSerialization;
 
+import africa.semicolon.Chapter15.classWork.Transaction;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -24,5 +25,10 @@ public class JsonSerializier {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.readValue(json, Person.class);
 
+    }
+
+    public static Transaction[] deserializeTrans(String json) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.readValue(json, Transaction[].class);
     }
 }
